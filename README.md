@@ -209,19 +209,10 @@ void updateOutputs() {
 
 ## 7. Demonstration Video
 
-<!-- INSTRUCTIONS: Choose ONE of the options below and delete the other.
-Option A (recommended): Edit this README on GitHub, then drag and drop your .mp4 file into the editor. GitHub will insert a link that plays the video directly on the page. Paste that link where indicated.
-Option B: Upload the video to YouTube or Google Drive and paste the share link in the markdown link below. -->
+https://drive.google.com/file/d/17uBMUx_QYdvwHT3DOnkzGmqRQWn2yNpH/view?usp=sharing
 
-**Option A: Uploaded video**
 
-PASTE_UPLOADED_VIDEO_LINK_HERE
-
-**Option B: External link**
-
-[Watch the demonstration video](PASTE_VIDEO_LINK_HERE)
-
-The video demonstrates the following, in order:
+The video demonstrates the following:
 
 1. The circuit and its labeled connections.
 2. Reset with the button released, with both LEDs off.
@@ -229,7 +220,7 @@ The video demonstrates the following, in order:
 4. The button held, with the status LED turning on.
 5. Rotation of the knob while the button is held, with the brightness changing.
 6. The button released, with both LEDs turning off.
-7. The Serial Monitor showing the `button`, `raw`, `requested`, and `applied` values.
+
 
 ---
 
@@ -241,11 +232,11 @@ The Serial Monitor was set to 115200 baud. Each line has the format `button=<0/1
 
 | # | Test | Expected Behavior | Observed Behavior | Result |
 |---|---|---|---|---|
-| 1 | Reset with the button released | Both LEDs off; `applied=0` | `button=0 raw=4095 requested=255 applied=0` on all 12 readings. LED observation: *[describe what was seen]* | Pass |
-| 2 | Hold the button | `button=1`; status LED on; `applied` equals `requested` | `button=1 raw=4095 requested=255 applied=255`. LED observation: *[describe what was seen]* | Pass |
-| 3 | Rotate the knob while held | Brightness changes with the knob | `raw` fell from 3918 to 0 while `applied` fell from 243 to 0 (see Section 8.3). LED observation: *[describe what was seen]* | Pass |
-| 4 | Release the button | Both LEDs off immediately | `applied` dropped to 0 while `raw` and `requested` stayed unchanged (for example, `raw=1275 requested=79 applied=0`). LED observation: *[describe what was seen]* | Pass |
-| 5 | Rotate the knob while released | Both LEDs stay off at every knob position | Across a full sweep from `raw=0` to `raw=4095` and back, `applied=0` on every line. LED observation: *[describe what was seen]* | Pass |
+| 1 | Reset with the button released | Both LEDs off; `applied=0` | `button=0 raw=4095 requested=255 applied=0` on all 12 readings. LED observation:  | Pass |
+| 2 | Hold the button | `button=1`; status LED on; `applied` equals `requested` | `button=1 raw=4095 requested=255 applied=255`. LED observation:  | Pass |
+| 3 | Rotate the knob while held | Brightness changes with the knob | `raw` fell from 3918 to 0 while `applied` fell from 243 to 0 (see Section 8.3). LED observation:  | Pass |
+| 4 | Release the button | Both LEDs off immediately | `applied` dropped to 0 while `raw` and `requested` stayed unchanged (for example, `raw=1275 requested=79 applied=0`). LED observation:  | Pass |
+| 5 | Rotate the knob while released | Both LEDs stay off at every knob position | Across a full sweep from `raw=0` to `raw=4095` and back, `applied=0` on every line. LED observation:  | Pass |
 
 ### 8.2 Low, Middle, and High Knob Positions (Button Held)
 
